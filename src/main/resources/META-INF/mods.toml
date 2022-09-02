@@ -1,0 +1,34 @@
+# The overall format is standard TOML format, v0.5.0.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+#
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT License"
+issueTrackerURL="https://github.com/MrHazMat/FireLance/issues"
+
+[[mods]]
+modId="firelance"
+version="1.18.2-0.0.1.0"
+displayName="Fire Lance"
+#updateJSONURL="https://change.me.example.invalid/updates.json"
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+logoFile="logo.png"
+credits="Thanks to McJty for teaching the basics of modding, DerToaster98 and BluSunrize for making their code visible so that others may learn from them"
+authors="MrHazMat"
+description='''
+Cause nobody asked, I made a gun.
+'''
+
+[[dependencies.firelance]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.firelance]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"

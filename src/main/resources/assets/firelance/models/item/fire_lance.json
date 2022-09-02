@@ -1,0 +1,7 @@
+{
+  "parent": "firelance:custom/fire_lance_idle",
+  "textures": {
+    "3": "firelance:blocks/fire_lance",
+    "particle": "firelance:items/firelancesprite"
+  }
+}
