@@ -1,6 +1,5 @@
 package mrhazmat.firelance;
 
-import mrhazmat.firelance.init.FireLanceEntities;
 import mrhazmat.firelance.init.FireLanceRegisters;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -16,6 +15,5 @@ public class FireLance {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		FireLanceRegisters.REGISTRY.register(bus);
-		FireLanceEntities.REGISTRY.register(bus);
 	}
 }

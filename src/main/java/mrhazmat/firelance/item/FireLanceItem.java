@@ -34,18 +34,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 public class FireLanceItem extends CrossbowItem {
-	private static final String TAG_CHARGED = "Charged";
-	private static final String TAG_CHARGED_PROJECTILES = "ChargedProjectiles";
-	private static final int MAX_CHARGE_DURATION = 25;
-	public static final int DEFAULT_RANGE = 8;
 	/** Set to {@code true} when the crossbow is 20% charged. */
 	private boolean startSoundPlayed = false;
 	/** Set to {@code true} when the crossbow is 50% charged. */
 	private boolean midLoadSoundPlayed = false;
-	private static final float START_SOUND_PERCENT = 0.2F;
-	private static final float MID_SOUND_PERCENT = 0.5F;
-	private static final float ARROW_POWER = 3.15F;
-	private static final float FIREWORK_POWER = 1.6F;
 
 	public FireLanceItem(Item.Properties pProperties) {
 		super(pProperties);
@@ -233,7 +225,7 @@ public class FireLanceItem extends CrossbowItem {
 				p_40858_.broadcastBreakEvent(pHand);
 			});
 			pLevel.addFreshEntity(projectile);
-			pLevel.playSound((Player)null, pShooter.getX(), pShooter.getY(), pShooter.getZ(), SoundEvents.CROSSBOW_SHOOT, SoundSource.PLAYERS, 1.0F, pSoundPitch);
+			pLevel.playSound((Player)null, pShooter.getX(), pShooter.getY(), pShooter.getZ(), SoundEvents.GENERIC_EXPLODE, SoundSource.PLAYERS, 1.0F, pSoundPitch);
 		}
 	}
 
